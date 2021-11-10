@@ -2,4 +2,4 @@
 
 This is a restaurant page project for the NPM/Webpack section of TOP.
 
-[Link]
+[https://jonahberlyne.github.io/restaurantPage/]
