@@ -1,1 +1,3 @@
-console.log("This is step trois");
+import showElements from "./page_elements";
+
+document.body.appendChild(showElements());
