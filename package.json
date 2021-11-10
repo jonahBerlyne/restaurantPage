@@ -4,6 +4,7 @@
   "description": "This is a restaurant page project for the NPM/Webpack section of TOP.",
   "main": "index.js",
   "scripts": {
+    "start": "webpack --config webpack.config.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
