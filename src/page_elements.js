@@ -6,7 +6,7 @@ export default function showElements() {
  content.appendChild(h1);
 
  const img = document.createElement("img");
- img.src = "krustykrab.jpeg";
+ img.src = "/krustykrab.jpeg";
  content.appendChild(img);
 
  const p = document.createElement("p");
