@@ -1,19 +1,48 @@
-export default function showElements() {
+import showContact from "./contact";
+import showHome from "./home";
+import showMenu from "./menu";
+
+export default function showHeader() {
+
  const content = document.getElementById("content");
 
- const h1 = document.createElement("h1");
- h1.textContent = "The Krusty Krab: Home of the Krabby Patties!";
- content.appendChild(h1);
+ const header = document.createElement("header");
 
- const img = document.createElement("img");
- img.src = "/krustykrab.jpeg";
- img.width = 500;
- img.height = 500;
- content.appendChild(img);
+ const home = document.createElement("a");
+ home.setAttribute("id", "home");
+ home.textContent = "Home";
+ home.setAttribute("href", "#");
+ home.addEventListener('click', showHome);
+ header.appendChild(home);
 
- const p = document.createElement("p");
- p.textContent = "This is a fantastic burger joint. If you want to eat krabby patties, then the krusty krab is where it's at boss.";
- content.appendChild(p);
+ const contact = document.createElement("a");
+ contact.setAttribute("id", "contact");
+ contact.textContent = "Contact";
+ contact.setAttribute("href", "#");
+ contact.addEventListener('click', showContact);
+ header.appendChild(contact);
+
+ const menu = document.createElement("a");
+ menu.setAttribute("id", "menu");
+ menu.textContent = "Menu";
+ menu.setAttribute("href", "#");
+ menu.addEventListener('click', showMenu);
+ header.appendChild(menu);
+
+ // const homeDiv = document.createElement("div");
+ // homeDiv.setAttribute("id", "homeDiv");
+
+ // const contactDiv = document.createElement("div");
+ // contactDiv.setAttribute("id", "contactDiv");
+
+ // const menuDiv = document.createElement("div");
+ // menuDiv.setAttribute("id", "menuDiv");
+
+ header.style.display = "flex";
+ header.style.gap = "20px";
+ content.appendChild(header);
+
+ console.log("header");
 
  return content;
 }
