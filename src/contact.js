@@ -14,11 +14,11 @@ export default function showContact() {
  // console.log("show if menuDiv section works");
 
  const contactDiv = document.getElementById("contactDiv");
+ contactDiv.style.display = "flex";
  const p = document.createElement("p");
  p.textContent = "Contact Page";
  contactDiv.appendChild(p);
 
- contactDiv.style.display = "flex";
 
  content.appendChild(contactDiv);
 

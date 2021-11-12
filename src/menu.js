@@ -1,8 +1,4 @@
-import showHeader from "./page-elements";
-
 export default function showMenu() {
-
- showHeader();
 
  const content = document.getElementById("content");
 
