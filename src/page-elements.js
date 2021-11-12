@@ -2,11 +2,7 @@ import showContact from "./contact";
 import showHome from "./home";
 import showMenu from "./menu";
 
-export default function showHeader() {
-
- const content = document.getElementById("content");
-
- content.classList.remove("hide");
+function showHeader() {
 
  const header = document.createElement("header");
 
@@ -33,9 +29,20 @@ export default function showHeader() {
 
  header.style.display = "flex";
  header.style.gap = "20px";
- content.appendChild(header);
 
- console.log("header");
+ return header;
+}
 
- return content;
+function showMain() {
+ const main = document.createElement("main");
+ main.setAttribute("id", "main");
+ return main;
+}
+
+export default function showWebsite() {
+ const content = document.getElementById("content");
+
+ content.appendChild(showHeader());
+ content.appendChild(showMain());
+ showHome();
 }

@@ -1,8 +1,3 @@
-const { default: showHome } = require("./home");
-const { default: showHeader } = require("./page-elements");
+const { default: showWebsite } = require("./page-elements");
 
-showHeader();
-
-showHome();
-
-console.log("console statement");
+showWebsite();
