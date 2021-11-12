@@ -1,24 +1,24 @@
-export default function showMenu() {
+// export default function showMenu() {
 
- const content = document.getElementById("content");
+//  const content = document.getElementById("content");
 
- const homeDiv = document.getElementById("homeDiv");
+//  const homeDiv = document.getElementById("homeDiv");
 
- homeDiv.style.display = "none";
+//  homeDiv.style.display = "none";
 
- const contactDiv = document.getElementById("contactDiv");
+//  const contactDiv = document.getElementById("contactDiv");
 
- contactDiv.style.display = "none";
+//  contactDiv.style.display = "none";
 
- const menuDiv = document.getElementById("menuDiv");
+//  const menuDiv = document.getElementById("menuDiv");
 
- const p = document.createElement("p");
- p.textContent = "Menu Page";
- menuDiv.appendChild(p);
+//  const p = document.createElement("p");
+//  p.textContent = "Menu Page";
+//  menuDiv.appendChild(p);
 
- menuDiv.style.display = "flex";
+//  menuDiv.style.display = "flex";
 
- content.appendChild(menuDiv);
+//  content.appendChild(menuDiv);
 
- return content;
-}
+//  return content;
+// }
