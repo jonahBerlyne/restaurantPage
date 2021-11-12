@@ -1,21 +1,20 @@
-import showHeader from "./page-elements";
-
 export default function showHome() {
-
- showHeader();
-
- const contactDiv = document.getElementById("contactDiv");
-
- contactDiv.style.display = "none";
-
- const menuDiv = document.getElementById("menuDiv");
-
- menuDiv.style.display = "none";
 
  const content = document.getElementById("content");
 
- const homeDiv = document.getElementById("homeDiv");
+ const homeDiv = document.createElement("div");
+ homeDiv.setAttribute("id", "homeDiv");
+ homeDiv.style.display = "flex";
+ homeDiv.style.flexDirection = "column";
 
+ const contactDiv = document.createElement("div");
+ contactDiv.setAttribute("id", "homeDiv");
+ contactDiv.style.display = "none";
+
+ // const menuDiv = document.createElement("div");
+ // menuDiv.setAttribute("id", "menuDiv");
+ // menuDiv.style.display = "none";
+ 
  const h1 = document.createElement("h1");
  h1.textContent = "The Krusty Krab: Home of the Krabby Patties!";
  homeDiv.appendChild(h1);

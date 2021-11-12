@@ -20,6 +20,8 @@ export default function showMenu() {
  p.textContent = "Menu Page";
  menuDiv.appendChild(p);
 
+ menuDiv.style.display = "flex";
+
  content.appendChild(menuDiv);
 
  return content;

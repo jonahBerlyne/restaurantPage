@@ -1,20 +1,8 @@
 const { default: showHome } = require("./home");
-//const { default: showContact } = require("./contact");
-//const { default: showMenu } = require("./menu");
+const { default: showHeader } = require("./page-elements");
 
-const homeDiv = document.createElement("div");
-homeDiv.setAttribute("id", "homeDiv");
-
-const contactDiv = document.createElement("div");
-contactDiv.setAttribute("id", "contactDiv");
-
-const menuDiv = document.createElement("div");
-menuDiv.setAttribute("id", "menuDiv");
+showHeader();
 
 showHome();
-
-//showContact();
-
-//showMenu();
 
 console.log("console statement");
