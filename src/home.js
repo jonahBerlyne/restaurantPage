@@ -4,12 +4,13 @@ export default function showHome() {
 
  const homeDiv = document.createElement("div");
  homeDiv.setAttribute("id", "homeDiv");
+ homeDiv.classList.remove("hide");
  homeDiv.style.display = "flex";
  homeDiv.style.flexDirection = "column";
 
  const contactDiv = document.createElement("div");
  contactDiv.setAttribute("id", "contactDiv");
- contactDiv.style.display = "none";
+ contactDiv.classList.add("hide");
 
  // const menuDiv = document.createElement("div");
  // menuDiv.setAttribute("id", "menuDiv");

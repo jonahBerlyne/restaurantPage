@@ -3,7 +3,7 @@ export default function showContact() {
  const content = document.getElementById("content");
 
  const homeDiv = document.getElementById("homeDiv");
- homeDiv.style.display = "none";
+ homeDiv.classList.add("hide");
 
  console.log("show if homeDiv section works");
  
@@ -14,7 +14,10 @@ export default function showContact() {
  // console.log("show if menuDiv section works");
 
  const contactDiv = document.getElementById("contactDiv");
- contactDiv.style.display = "flex";
+ contactDiv.classList.remove("hide");
+
+ console.log("show if contactDiv section works");
+
  const p = document.createElement("p");
  p.textContent = "Contact Page";
  contactDiv.appendChild(p);

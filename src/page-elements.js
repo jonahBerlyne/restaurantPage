@@ -6,6 +6,8 @@ export default function showHeader() {
 
  const content = document.getElementById("content");
 
+ content.classList.remove("hide");
+
  const header = document.createElement("header");
 
  const home = document.createElement("a");
