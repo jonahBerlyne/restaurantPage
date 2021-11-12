@@ -8,7 +8,7 @@ export default function showHome() {
  homeDiv.style.flexDirection = "column";
 
  const contactDiv = document.createElement("div");
- contactDiv.setAttribute("id", "homeDiv");
+ contactDiv.setAttribute("id", "contactDiv");
  contactDiv.style.display = "none";
 
  // const menuDiv = document.createElement("div");
